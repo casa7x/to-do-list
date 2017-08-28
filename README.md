@@ -1,1 +1,1 @@
-# Have some problems with export/import JSON. I hope that I'll fix it soon
+# Have some problems with export/import JSON and some bugs with other features. I hope that I'll fix it all soon)
