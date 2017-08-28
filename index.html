@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="sweetalert-master/dist/sweetalert.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="sweetalert-master/dist/sweetalert.css">		
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+	<script src="https://use.fontawesome.com/3ff6a857b3.js"></script>
+	<link rel = "stylesheet" href="reset.css">	
+	<link rel = "stylesheet" href="style.css">
+	<link rel = "stylesheet" href="3D.css">
+	
+<!-- 	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> -->
+	<title>Task Manager</title>
+</head>
+<body>
+	<header>
+		<div class = "avatar">
+			<img class = "ava" src="img/avatar.jpg">
+			<span class="fullname">Vitali Zalutski</span>
+		</div>
+	</header>
+	<div class = "overlay">
+		<div class = "modal">
+			<p><b>Add Task Title</b><br>
+   				<input type="text" size="40" id="inputText" placeholder="Task title">
+   			<p><b>Set time</b><br>
+   				<input type="text" size="10" id="inputTime" placeholder="Set time">
+   			<p><b>Set priority</b><br>
+   				<select class = "priority">
+   					<option>High</option>
+   					<option>Normal</option>
+   					<option>Low</option>
+   				</select>
+   				<!-- <input list="Priority">
+				<datalist id="Priority">
+				 <option value="High">
+				 <option value="Normal">
+				</datalist> --></p>
+			<button class="btn description  addTask">ADD</button>
+			<i class="fa fa-window-close-o fa-2x" aria-hidden="true"></i>
+		</div>
+	</div>
+	<div class="taskTitle">
+		<span class = "myTasks">My Tasks</span>
+		<span class = "date">28.03.2017</span>
+		<button class = "add"><i class="fa fa-plus-circle fa-4x"></i></button>
+	</div>
+	<ul class = "tasks" id = "tasks">
+		<li class = "drag"><i class="fa fa-circle high" aria-hidden="true"></i><p class="taskName">1 задание</p><p class="time">19 00</p><i class="fa fa-clock-o" aria-hidden="true"></i><i class="fa fa-pencil" aria-hidden="true"></i><span class="fa fa-ellipsis-h" aria-hidden="true">
+		</span><i class="fa fa-angle-double-down" aria-hidden="true"></i><i class="fa fa-times-circle-o" aria-hidden="true"></i></li>
+		<div class = "more">
+		<button class  ="btn description">Add Description</button>
+		</div>
+		<div class = "inputDesc">
+			<textarea placeholder="Description" class="textDesc"></textarea>
+			<button class = "btn description add2">Add</button>
+		</div>
+		<div class="added">
+			<p class="addedText"></p>
+			<button class="btn description editDesc">Edit</button>
+		</div>
+		<li class = "drag"><i class="fa fa-circle normal" aria-hidden="true"></i><p class="taskName">2 задание</p><p class="time">20 00</p><i class="fa fa-clock-o" aria-hidden="true"></i><i class="fa fa-pencil" aria-hidden="true"></i><span class="fa fa-ellipsis-h" aria-hidden="true"></span><i class="fa fa-angle-double-down" aria-hidden="true"></i><i class="fa fa-times-circle-o" aria-hidden="true"></i></li>
+		<div class = "more">
+		<button class  ="btn description">Add Description</button>
+		</div>
+		<div class = "inputDesc">
+			<textarea placeholder="Description" class="textDesc"></textarea>
+			<button class = "btn description add2">Add</button>
+		</div>
+		<div class="added">
+			<p class="addedText"></p>
+			<button class="btn description editDesc">Edit</button>
+		</div>
+		<li class = "drag"><i class="fa fa-circle low" aria-hidden="true"></i><p class="taskName">3 задание</p><p class="time">21 00</p><i class="fa fa-clock-o" aria-hidden="true"></i><i class="fa fa-pencil" aria-hidden="true"></i><span class="fa fa-ellipsis-h" aria-hidden="true"></span><i class="fa fa-angle-double-down" aria-hidden="true"></i><i class="fa fa-times-circle-o" aria-hidden="true"></i></li>
+		<div class = "more">
+		<button class  ="btn description">Add Description</button>
+		</div>
+		<div class = "inputDesc">
+			<textarea placeholder="Description" class="textDesc"></textarea>
+			<button class = "btn description add2">Add</button>
+		</div>
+		<div class="added">
+			<p class="addedText"></p>
+			<button class="btn description editDesc">Edit</button>
+		</div>
+	</ul>
+	<footer>
+		<button class="btn first showClosed">Show closed</button>
+		<button class="btn first showJSON">Export JSON</button>
+		<button class="btn first impJSON">Import JSON</button>
+		<div class = "overlay2">
+			<div class = "modal2">
+				<ul class="done">
+					<li>Done</li>
+				</ul>
+				<i class="fa fa-window-close-o fa-2x" aria-hidden="true"></i>
+			</div>
+	</div>
+	</footer>
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+	
+	<script src="main.js"></script>
+</body>
+</html>
